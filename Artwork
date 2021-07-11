@@ -1,0 +1,19 @@
+#include <iostream>
+using namespace std;
+int main() {
+int n = 9;
+for(int i = 0,k = 0;i < 2*n-1;i++,k++){
+    for(int j = 0;j < 2*n-1;j++){
+        if(j <= k)
+        cout << " " << n- j;
+        else if(j >= 2*n -1 -k)
+        cout << " " << n + j - (2*n - 1) + 1;
+        else 
+        cout << " " << n - k;         
+    }
+    if(i >= n-1)
+    k-=2;
+    cout << "\n";
+}
+    return 0;
+}
